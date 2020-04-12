@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <form class="form">
+    <form class="form" action="/procesarDatos" method="POST" enctype="multipart/form-data">
         <h2>DONATIONS</h2>
-        <p type="Name:"><input placeholder="Write your name here."></input>
+        <p type="Name:"><input placeholder="Write your name here." name="nombre"></input>
         </p>
-        <p type="Email:"><input placeholder="Let us know how to contact you back."></input>
+        <p type="Email:"><input placeholder="Let us know how to contact you back." name="email"></input>
         </p>
-        <p type="Image:"><input type="file" id="file" accept="image/*" onchange="show()" placeholder="Choose a photo."></input>
+        <p type="Image:"><input type="file" id="file" accept="image/*" onchange="show()" placeholder="Choose a photo." name="file"></input>
         </p>
         <p><img id="img" alt="There's no image selected."></p>
         <p><button>Send</button></p>
